@@ -56,7 +56,7 @@ header {
     justify-content: space-between;
     background-image: url("../assets/header_bg.png");
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 header p {
@@ -72,9 +72,9 @@ header p {
     background-size: 100%;
     margin-top: 3.5%;
     width: 20vw;
-    height: 14vh;
+    height: auto;
     margin-left: 5%;
-    padding: 2% 0.5% 0% 0.5%;
+    padding: 2% 0.5% 1% 0.5%;
 }
 
 .logo img {
