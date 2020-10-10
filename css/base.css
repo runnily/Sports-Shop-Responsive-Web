@@ -56,7 +56,7 @@ header {
     justify-content: space-between;
     background-image: url("../assets/header_bg.png");
     width: 100%;
-    height: calc(43vh - 20vh);
+    height: 100%;
 }
 
 header p {
@@ -70,16 +70,17 @@ header p {
     background-image: url("../assets/logo_plane.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    max-width: 20vw;
-    max-height: 15vh;
     margin-top: 3.5%;
+    width: 20vw;
+    height: 14vh;
     margin-left: 5%;
     padding: 2% 0.5% 0% 0.5%;
 }
 
 .logo img {
-    max-width: 100%;
     height: auto;
+    object-fit: contain;
+    max-width: 100%;
 }
 
 
@@ -137,7 +138,6 @@ main {
 
 .first_section {
     padding: 1% 6% 3% 6%;
-    ;
     height: auto;
 }
 
@@ -145,11 +145,13 @@ main {
 /* makes image 100% ensuring it does
     not go above the scale off sections */
 
-.first_section img {
-    max-width: 100%;
+.first_section .f-img {
     width: 100%;
-    height: 50vh;
-    max-height: 50vh;
+    max-width: 100%;
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-image: url("../assets/image1.jpg");
+    background-size: 100%;
 }
 
 
