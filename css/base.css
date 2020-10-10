@@ -54,6 +54,7 @@ header {
     display: flex;
     /* ensuring space between logo and p */
     justify-content: space-between;
+    background-color: lightgray;
     background-image: url("../assets/header_bg.png");
     width: 100%;
     height: auto;
