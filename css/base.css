@@ -1,24 +1,32 @@
 body {
-   margin: 0; 
-   max-width: 100vw;
+    margin: 0;
+    max-width: 100vw;
 }
+
+
+/* These are style of some text 
+    within the webpage*/
 
 .cap-font-white {
     color: white;
-    text-transform:uppercase;
+    text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
 }
 
 .cap-font-red {
     color: #b70001;
-    text-transform:uppercase;
+    text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
 }
 
+
+/* For the top part,
+    before the header */
+
 .top {
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
     width: 100vw;
     height: auto;
@@ -38,65 +46,68 @@ body {
     text-decoration: none;
 }
 
+
+/* Styling the  
+    header */
+
 header {
+    display: flex;
+    /* ensuring space between logo and p */
+    justify-content: space-between;
     background-image: url("../assets/header_bg.png");
     width: 100%;
-    height: 20vh;
     height: calc(43vh - 20vh);
-    display: flex;
-    flex-wrap: nowrap;
 }
 
-header .text {
-    display: flex; 
-    justify-content: flex-end;
-    margin-left: 40%;
-    
-}
-
-.text p {
+header p {
     font-size: 2vmin;
-    margin-top: 23%;
-    color: gray; 
+    margin-top: 6%;
+    margin-right: 16%;
+    color: gray;
 }
-
 
 .logo {
     background-image: url("../assets/logo_plane.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 20vw;
-    height: 20vh;
+    max-width: 20vw;
+    max-height: 15vh;
     margin-top: 3.5%;
     margin-left: 5%;
-    padding: 2% 0.5% 2% 0.5%;
+    padding: 2% 0.5% 0% 0.5%;
 }
 
 .logo img {
     max-width: 100%;
     height: auto;
-    
 }
+
+
+/* Defines layout for nav */
 
 nav ul {
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
-    margin-right: 2%;
+    /* makes nav appear at the side */
+    margin-right: 15%;
 }
-
 
 nav ul li {
     display: inline-block;
     margin: 1%;
-    white-space:nowrap
+    white-space: nowrap;
 }
 
 nav ul li a {
     color: #b70001;
-    text-transform:uppercase;
+    text-transform: uppercase;
     text-decoration: none;
     font-size: 2vmin;
 }
+
+
+/* Main body of the web page
+    which consists off 3 sections */
 
 main {
     background-image: url("../assets/background.png");
@@ -104,60 +115,98 @@ main {
 }
 
 
-.first_section, .second_section, .third_section {
+/* How each section will be formatted */
+
+.first_section,
+.second_section,
+.third_section {
     max-width: 100vw;
     height: auto;
     display: flex;
     flex-wrap: nowrap;
 }
 
-.second_section, .third_section {
+
+/* Ensuring spacing are all
+   proportional to each section */
+
+.second_section,
+.third_section {
     padding: 0 5% 0 5%;
 }
 
 .first_section {
-    padding: 1% 6% 3% 6%;;
-    height: 60vh;
+    padding: 1% 6% 3% 6%;
+    ;
+    height: auto;
 }
+
+
+/* makes image 100% ensuring it does
+    not go above the scale off sections */
 
 .first_section img {
     max-width: 100%;
-    height: auto;
-} 
+    width: 100%;
+    height: 50vh;
+    max-height: 50vh;
+}
 
-/* Second section will contains figutes */
-/* The third sections contains other sections */
-/* Code below is used the width and spacing */
-/* between elements */
-.second_section figure, .third_section section{
+
+/* Second section will contains figutes 
+ The third sections contains other sections 
+ Code below is used the width and spacing 
+ between elements */
+
+.second_section figure,
+.third_section section {
     width: 50vw;
     max-width: 50vw;
     margin: 1%;
 }
+
+
+/* Defines how the title will 
+   appear */
 
 .second_section figure figcaption span {
     display: block;
     font-size: 3vmin;
 }
 
+.second_section figure figcaption span {
+    font-size: 2vmin;
+}
+
 .second_section figure figcaption {
     background-image: url("../assets/content_plane_bg.png");
+    /*  spacing for the content inside figurecaption
+        still ensuring it proportional the text
+        in the third section */
     padding: 10%;
 }
 
 .second_section figure img {
-    vertical-align: middle; /*removes unwanted space as img is an inline element*/
+    vertical-align: middle;
+    /*removes unwanted space as img is an inline element*/
 }
 
-/* The second img sections and third section will */
-/* images will inially be set to these */
-.second_section img, .third_section img {
+
+/* To not allow imgs to go beyond there
+   scale. Ensuring its proportional
+   to their corresponding sections */
+
+.second_section img,
+.third_section img {
     max-width: 100%;
     max-height: 100%;
 }
 
 .third_section p {
     font-size: 2vmin;
+    /* spacing for the text around p
+    while ensuring it proportional the text
+    in the second section */
     margin: 10%;
     color: white;
 }
@@ -170,17 +219,27 @@ main {
     font-size: 3vmin;
 }
 
-
 .third_section section {
     background-image: url("../assets/content_plane_bg.png");
 }
 
+
+/* Need to define the image
+   width inside a specfic section
+   within the third section */
+
 .third_section section #specimg {
     width: 80%;
     max-width: 80%;
-    margin: 10% 10% 0 10%;
+    /* ensuring proportionality between the width
+       of the image so its positions within the centre*/
+    display: block;
+    margin: 5% auto 0 auto;
 }
 
+
+/* This defines the layout of the 
+   last section of the third section */
 
 .inner {
     display: flex;
@@ -211,23 +270,31 @@ main {
     font-weight: bold;
 }
 
-footer  {
+
+/* how footer appears */
+
+footer {
     max-width: 100vw;
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
 }
 
 footer p {
     color: #b70001;
-    margin-right: 3%;
+    margin-right: 6%;
 }
 
+
+/* break point for mobbile phones */
+
 @media only screen and (max-width: 600px) {
-    .first_section, .second_section, .third_section {
+    .first_section,
+    .second_section,
+    .third_section {
         flex-wrap: wrap;
     }
-
-    .second_section figure, .third_section section{
+    .second_section figure,
+    .third_section section {
         width: 100vw;
         max-width: 100vw;
     }
